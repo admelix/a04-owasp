@@ -1,5 +1,15 @@
 # Aplicacion Vulnerable - A04 Insecure Design
 
+
+### comandos para correr la app
+
+```bash
+
+docker build -t lfi .
+
+docker container run -dit --name lfi -p 8000:8000 lfi
+```
+
 En este momento, estamos frente a una aplicacion que recibe un usuario y un correo electronico y luego nos genera un archivo CSV.
 
 si usamos **wappalyzer**, nos daremos cuenta a que nos estamos enfrentando:
